@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+*{
+    font-family: 'Raleway';
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+html, body{
+    background-color: #39B5E0;
+    height: 100%;
+    margin: 0;
+}
+
+ .grid-container{
+    display: grid;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    grid-template-rows: 200px 150xp;
+} 
+.grid-item{
+    position: relative;
+    font-size: 25px;
+    padding: 20px 30px;
+    padding-top: 50px;
+    background-color: #F5EA5A;
+    color: #222;
+    border: 1px solid #39B5E0;
+}
+.grid-item:nth-child(odd){
+    background-color: #ff78f0;
+}
+.grid-item::before{
+    content: 'Grid item';
+    position: absolute;
+    font-size: 25px;
+    font-weight:bold;
+    top: 10px;
+    left: 15px;
+}
+.grid-item::after{
+    position: absolute;
+    font-size: 25px;
+    top: 10px;
+    top: 15px;
+    font-weight: bold;
+}
+
+.grid-item-1::after{
+    content: '1';
+}
+.grid-item-2::after{
+    content: '2';
+}
+.grid-item-3::after{
+    content: '3';
+}
+.grid-item-4::after{
+    content: '4';
+}
+.grid-item-5::after{
+    content: '5';
+} 
+
+
+
+
+
+
+
+
+
